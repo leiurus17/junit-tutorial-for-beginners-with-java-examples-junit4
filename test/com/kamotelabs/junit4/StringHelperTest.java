@@ -8,7 +8,9 @@ public class StringHelperTest {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		// expected, actual
+		assertEquals("ABC", "ABC");
+		
 	}
 
 }
