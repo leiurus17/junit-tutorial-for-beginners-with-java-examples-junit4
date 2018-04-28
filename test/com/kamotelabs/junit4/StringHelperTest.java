@@ -30,7 +30,6 @@ public class StringHelperTest {
 	
 	@Test
 	public void areFirstAndLastTwoCharactersTheSameTest_BasicPositiveTesting() {
-		// "Dummy String" will appear if the test fails
 		assertTrue("Dummy String", helper.areFirstAndLastTwoCharactersTheSame("ABAB"));
 	}
 	
