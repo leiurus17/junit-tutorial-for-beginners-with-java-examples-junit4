@@ -9,13 +9,13 @@ import com.kamotelabs.helper.StringHelper;
 public class StringHelperTest {
 
 	@Test
-	public void testTruncateAInFirstTwoPositions() {
+	public void testTruncateAInFirstTwoPositions_AAinFirst2Positions() {
 		StringHelper helper = new StringHelper();
 		assertEquals("CD", helper.truncateAInFirst2Positions("AACD"));
 	}
 	
 	@Test
-	public void testTruncateAInFirstTwoPositions2() {
+	public void testTruncateAInFirstTwoPositions2_AinFirstPosition() {
 		StringHelper helper = new StringHelper();
 		assertEquals("CD", helper.truncateAInFirst2Positions("ACD"));
 	}
