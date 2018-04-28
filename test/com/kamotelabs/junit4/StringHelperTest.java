@@ -1,6 +1,7 @@
 package com.kamotelabs.junit4;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 import org.junit.Test;
 
@@ -22,10 +23,7 @@ public class StringHelperTest {
 	
 	@Test
 	public void areFirstAndLastTwoCharactersTheSameTest_BasicNegativeTesting() {
-		boolean actualValue = helper.areFirstAndLastTwoCharactersTheSame("ABCD");
-		boolean expectedValue = false;
-		
-		assertEquals(expectedValue, actualValue);
+		assertFalse(helper.areFirstAndLastTwoCharactersTheSame("ABCD"));
 	}
 
 }
