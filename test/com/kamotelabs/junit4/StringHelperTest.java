@@ -33,5 +33,15 @@ public class StringHelperTest {
 		// "Dummy String" will appear if the test fails
 		assertTrue("Dummy String", helper.areFirstAndLastTwoCharactersTheSame("ABAB"));
 	}
+	
+	@Test
+	public void areFirstAndLastTwoCharactersTheSame_OneCharacterOnly() {
+		assertFalse("Dummy String", helper.areFirstAndLastTwoCharactersTheSame("A"));
+	}
+	
+	@Test
+	public void areFirstAndLastTwoCharactersTheSame_TwoCharacters() {
+		assertTrue("Dummy String", helper.areFirstAndLastTwoCharactersTheSame("AB"));
+	}
 
 }
