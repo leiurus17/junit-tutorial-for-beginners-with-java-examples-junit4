@@ -13,9 +13,10 @@ public class StringHelperTest {
 		
 		StringHelper helper = new StringHelper();
 		String actualValue = helper.truncateAInFirst2Positions("AACD");
+		String expectedValue = "CD";
 		
 		// expected, actual
-		assertEquals("CD", actualValue);
+		assertEquals(expectedValue, actualValue);
 		
 	}
 
