@@ -23,7 +23,8 @@ public class StringHelperTest {
 	
 	@Test
 	public void areFirstAndLastTwoCharactersTheSameTest_BasicNegativeTesting() {
-		assertFalse(helper.areFirstAndLastTwoCharactersTheSame("ABCD"));
+		// "Dummy String" will appear if the test fails
+		assertFalse("Dummy String", helper.areFirstAndLastTwoCharactersTheSame("ABCD"));
 	}
 
 }
