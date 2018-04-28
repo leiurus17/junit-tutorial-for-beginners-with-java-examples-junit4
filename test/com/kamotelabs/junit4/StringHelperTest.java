@@ -10,14 +10,8 @@ public class StringHelperTest {
 
 	@Test
 	public void test() {
-		
 		StringHelper helper = new StringHelper();
-		String actualValue = helper.truncateAInFirst2Positions("AACD");
-		String expectedValue = "CD";
-		
-		// expected, actual
-		assertEquals(expectedValue, actualValue);
-		
+		assertEquals("CD", helper.truncateAInFirst2Positions("AACD"));
 	}
 
 }
